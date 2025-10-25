@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Suspicious Transaction Detection</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🧠 GuardIQ - Suspicious Transaction Detection</h1>
+
+        <div class="transaction-form">
+            <h2>Simulate Transaction</h2>
+            <label>User ID:</label>
+            <input type="text" id="userId" placeholder="U1">
+
+            <label>Amount:</label>
+            <input type="number" id="amount" placeholder="1000">
+
+            <label>Location:</label>
+            <input type="text" id="location" placeholder="Hyderabad">
+
+            <label>Device ID:</label>
+            <input type="text" id="device" placeholder="LAP123">
+
+            <button onclick="checkTransaction()">Check Transaction</button>
+        </div>
+
+        <div class="result">
+            <h2>Result:</h2>
+            <p id="status">No transaction checked yet.</p>
+            <ul id="reasons"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
